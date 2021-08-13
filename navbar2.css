@@ -8,6 +8,7 @@
     width: 35px;
     height: 35px;
     cursor: pointer;
+    margin-right: auto;
 }
 
 .nav__links {
@@ -28,6 +29,7 @@
 }
 
 button {
+    margin-left: 20px;
     padding: 9px 25px;
     background-color: rgb(219, 8, 124);
     border: none;
@@ -51,7 +53,7 @@ header {
     background-color: rgb(17, 17, 97);
     /* flexbox */
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
 }
