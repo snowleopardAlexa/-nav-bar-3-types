@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+/* fix the 1st child for the button */
+.nav__links li:nth-child(1) {
+    padding: 0px 20px 0 0;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0;
+}
+
+.nav__links li a:hover {
+    color: orchid;
+}
+
+button {
+    padding: 9px 25px;
+    /* move to left to make items in list have the same space between */
+    margin-left: 20px;
+    background-color: rgb(219, 8, 124);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0;
+}
+
+button:hover {
+    background-color: rgb(255, 0, 119);
+}
+
+li, a, button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    background-color: rgb(17, 17, 97);
+    /* flexbox */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+/* order - specifies the order of a flexible item relative to the rest of the flexible items inside the same container */
+.logo {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    order: 3;
+    margin-left: auto;
+}
+
+nav {
+    order: 1;
+}
+
+.cta {
+    order: 2;
+}
